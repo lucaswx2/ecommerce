@@ -1,6 +1,8 @@
 {
   "name": "cadimoApp",
-  "app_id": "",
+  "app_id": "c2a07dc0",
   "type": "ionic-angular",
-  "integrations": {}
+  "integrations": {
+    "cordova": {}
+  }
 }
