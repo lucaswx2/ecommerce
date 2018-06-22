@@ -5,21 +5,20 @@ import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { MyApp } from './app.component';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
-import { AbasPage } from '../pages/abas/abas';
+import { AbasPageModule } from '../pages/abas/abas.module';
 
 @NgModule({
   declarations: [
     MyApp,
-    AbasPage
   ],
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
+    AbasPageModule,
   ],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    AbasPage,
 
   ],
   providers: [

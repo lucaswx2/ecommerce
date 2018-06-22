@@ -44,9 +44,11 @@ $colors: (
 
 
 $toolbar-background: map-get($colors,dark );
-$toolbar-md-height: 35px;
 $toolbar-md-title-font-size: 1.3em;
-
+$toolbar-md-padding: 0px;
+$searchbar-md-input-border-radius:0px;
+$searchbar-md-padding:0px;
+$searchbar-md-border-color: map-get($colors,secondary );
 // App iOS Variables
 // --------------------------------------------------
 // iOS only Sass variables can go here

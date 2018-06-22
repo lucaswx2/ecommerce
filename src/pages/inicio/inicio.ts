@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, ModalController } from 'ionic-angular';
+import { PesquisarModalPage } from '../pesquisar-modal/pesquisar-modal';
 
 /**
  * Generated class for the inicioPage page.
@@ -15,11 +16,15 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class InicioPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams,public modalCtrl:ModalController) {
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad inicioPage');
+
+  
+  pesquisar(){
+    console.log('eita');
+    let modal = this.modalCtrl.create(PesquisarModalPage);
+    modal.present();
   }
 
 }

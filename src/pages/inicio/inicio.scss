@@ -1,4 +1,13 @@
 page-inicio {
+  .swiper-slide img {
+    max-width:320px;
+    max-height:200px;
+  
+  }
+.searchbar-md .searchbar-input{
+  border:black solid 0.02px;
+}
+
     h2 {
         margin-top: 1rem;
       }
@@ -7,12 +16,12 @@ page-inicio {
         padding: 0px;
         .slides {
           .overlay {
-            background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+            background-image: map-get($colors,dark ) !important;
             display: inline-flex;
           }
           .slider-img {
             height: 220px;
-            width: 100%;
+            width: 80%;
             position: relative;
             z-index: -111;
           }
@@ -59,7 +68,7 @@ page-inicio {
             color: map-get($colors,light );
             font-size: 1.2em;
             padding: 5px;
-            background-color:map-get($colors,primary );
+            background-color:map-get($colors,dark );
            
             position: relative;
             width: 100%;
