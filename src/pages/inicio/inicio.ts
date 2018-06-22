@@ -22,7 +22,6 @@ export class InicioPage {
 
   
   pesquisar(){
-    console.log('eita');
     let modal = this.modalCtrl.create(PesquisarModalPage);
     modal.present();
   }

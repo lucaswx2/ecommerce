@@ -1,6 +1,6 @@
-import { Component } from '@angular/core';
-import {  NavController, NavParams } from 'ionic-angular';
-
+import { Component, ViewChild } from '@angular/core';
+import { NavController, NavParams, ViewController, Searchbar } from 'ionic-angular';
+import { Keyboard } from '@ionic-native/keyboard';
 /**
  * Generated class for the PesquisarModalPage page.
  *
@@ -13,12 +13,16 @@ import {  NavController, NavParams } from 'ionic-angular';
   templateUrl: 'pesquisar-modal.html',
 })
 export class PesquisarModalPage {
-
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  @ViewChild('searchbar') searchBar: Searchbar;
+  constructor(public navCtrl: NavController, public navParams: NavParams, public viewCtrl: ViewController,private keyboard: Keyboard) {
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad PesquisarModalPage');
-  }
 
+
+  ionViewDidEnter() {
+    setTimeout(()=>{
+      this.searchBar.setFocus();
+      this.keyboard.show();
+    })
+  }
 }

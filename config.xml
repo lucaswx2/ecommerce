@@ -86,4 +86,5 @@
         <variable name="CHANNEL_NAME" value="Master" />
         <variable name="UPDATE_METHOD" value="background" />
     </plugin>
+    <plugin name="ionic-plugin-keyboard" spec="^2.2.1" />
 </widget>

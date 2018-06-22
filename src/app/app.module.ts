@@ -6,7 +6,7 @@ import { MyApp } from './app.component';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { AbasPageModule } from '../pages/abas/abas.module';
-
+import { Keyboard } from '@ionic-native/keyboard';
 @NgModule({
   declarations: [
     MyApp,
@@ -24,6 +24,7 @@ import { AbasPageModule } from '../pages/abas/abas.module';
   providers: [
     StatusBar,
     SplashScreen,
+    Keyboard,
     { provide: ErrorHandler, useClass: IonicErrorHandler }
   ]
 })
