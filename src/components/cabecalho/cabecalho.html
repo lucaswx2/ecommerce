@@ -1,0 +1,18 @@
+<ion-navbar>
+  <button ion-button menuToggle color="light">
+    <ion-icon name="menu"></ion-icon>
+  </button>
+  <ion-title *ngIf="!texto">
+    <img alt="logo" height="20" src="../assets/imgs/logo.png"> Cadimo Store
+  </ion-title>
+  <ion-title *ngIf="texto">
+    {{texto}}
+  </ion-title>
+  <ion-buttons end>
+    <button ion-button icon-only (click)="pesquisar()">
+      <ion-icon name="md-search"></ion-icon>
+    </button>
+    <button ion-button icon-only>
+      <ion-icon name="md-cart"></ion-icon>
+    </button>
+  </ion-buttons>

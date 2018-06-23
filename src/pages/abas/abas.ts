@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController } from 'ionic-angular';
 import { InicioPage } from '../inicio/inicio';
-import { CategoriasPage } from '../categorias/categorias';
+import { PedidosPage } from '../pedidos/pedidos';
 import { FavoritosPage } from '../favoritos/favoritos';
 import { MinhaContaPage } from '../minha-conta/minha-conta';
 
@@ -19,10 +19,10 @@ import { MinhaContaPage } from '../minha-conta/minha-conta';
 })
 export class AbasPage {
 
-  inicioRoot = InicioPage;
-  categoriasRoot = CategoriasPage;
-  favoritosRoot = FavoritosPage;
-  minhaContaRoot = MinhaContaPage;
+  inicioRoot =  'InicioPage';
+  pedidosRoot = 'PedidosPage';
+  favoritosRoot = 'FavoritosPage';
+  minhaContaRoot = 'MinhaContaPage';
 
 
   constructor(public navCtrl: NavController) {}

@@ -1,27 +1,13 @@
-<ion-header>
-  <ion-navbar>
-    <button ion-button menuToggle color="light">
-      <ion-icon name="menu"></ion-icon>
-    </button>
-    <ion-title>
-      <img alt="logo" height="20" src="../assets/imgs/logo.png"> Cadimo Store
-    </ion-title>
-    <ion-buttons end>
-      <button ion-fab mini end>
-        <ion-icon name="md-cart"></ion-icon>
-      </button>
-    </ion-buttons>
-  </ion-navbar>
+<ion-header >
+  <cabecalho ></cabecalho>
 </ion-header>
+
 
 <ion-content padding>
 
-  <ion-row>
-    <ion-col col-12>
-      <ion-searchbar (click)="pesquisar()" placeholder="O que você procura?"> </ion-searchbar>
-    </ion-col>
-  </ion-row>
+
   <ion-grid class="grid">
+
     <ion-row>
       <ion-slides autoplay="1000" loop="true" speed="3000">
         <ion-slide>
@@ -37,12 +23,16 @@
       </ion-slides>
     </ion-row>
 
+    <ion-row>
+      <ion-col col-12>
+        <ion-searchbar (click)="pesquisar()" placeholder="O que você procura?"> </ion-searchbar>
+      </ion-col>
+    </ion-row>
 
 
-
-    <ion-row class="categorias">
+    <ion-row class="pedidos">
       <ion-col col-6>
-        <img src="https://i2.wp.com/www.revistabula.com/wp/wp-content/uploads/2017/09/Livros-3.jpg?resize=610%2C350" />
+        <img [src]="fotos.livros" />
         <p class="texto-sobre-img">Livros</p>
       </ion-col>
       <ion-col col-6>
