@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { InfoContaPage } from './info-conta/info-conta';
 
 /**
  * Generated class for the MinhaContaPage page.
@@ -9,22 +8,17 @@ import { InfoContaPage } from './info-conta/info-conta';
  * Ionic pages and navigation.
  */
 
-@IonicPage()
 @Component({
-  selector: 'page-minha-conta',
-  templateUrl: 'minha-conta.html',
+  selector: 'info-conta',
+  templateUrl: 'info-conta.html',
 })
-export class MinhaContaPage {
+export class InfoContaPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad MinhaContaPage');
-  }
-
-  abrirInfoConta(){
-    this.navCtrl.push(InfoContaPage)
   }
 
 }

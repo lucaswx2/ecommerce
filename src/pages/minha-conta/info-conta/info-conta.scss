@@ -1,0 +1,15 @@
+info-conta{
+    .icon-topo{
+        margin-top:15%;
+        margin-bottom: 10%;
+        ion-icon{
+            color: map-get($colors, grey );
+            font-size: 5em !important;
+
+        }
+    }
+
+    .botao-editar{
+        margin-top:10%;
+    }
+}

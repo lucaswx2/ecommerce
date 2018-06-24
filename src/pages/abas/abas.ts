@@ -1,9 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController } from 'ionic-angular';
-import { InicioPage } from '../inicio/inicio';
-import { PedidosPage } from '../pedidos/pedidos';
-import { FavoritosPage } from '../favoritos/favoritos';
-import { MinhaContaPage } from '../minha-conta/minha-conta';
+
 
 /**
  * Generated class for the AbasPage tabs.

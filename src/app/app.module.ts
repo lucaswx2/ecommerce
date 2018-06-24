@@ -7,7 +7,6 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { AbasPageModule } from '../pages/abas/abas.module';
 import { Keyboard } from '@ionic-native/keyboard';
-import { CabecalhoComponent } from '../components/cabecalho/cabecalho';
 
 @NgModule({
   declarations: [
