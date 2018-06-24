@@ -1,27 +1,11 @@
 page-favoritos {
-    .favoritos {
-        ion-col{
-            border:1px solid black;
-            height: 220px;
+    .semPedidos{
+        margin-top:55%;
+        color:map-get($colors, grey );
+        ion-icon{
+            font-size: 5em;
         }
-        flex-wrap: wrap;
-        h2 {
-          margin-top: -12px;
-          font-size: 2.7rem;
-          color: rgba(66, 66, 66, 0.87);
-          font-weight: 500;
-        }
-        img {
-          height: 150px;
-          width: 100%;
-          position: relative;
-          z-index: -111;
-        }
-        .botao-lixeira{
-            position:relative;
-            bottom:15% !important;
-        }
-       
-      }
+    }
+    
     
 }

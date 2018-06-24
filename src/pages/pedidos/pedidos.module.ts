@@ -1,6 +1,7 @@
-import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { IonicPageModule } from 'ionic-angular';
 import { PedidosPage } from './pedidos';
+import { ComponentsModule } from '../../components/component.module';
 
 @NgModule({
   declarations: [
@@ -8,7 +9,8 @@ import { PedidosPage } from './pedidos';
   ],
   imports: [
     IonicPageModule.forChild(PedidosPage),
+    ComponentsModule
   ],
-  schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
+
 })
 export class PedidosPageModule {}

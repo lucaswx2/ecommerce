@@ -1,19 +1,17 @@
 import { NgModule } from '@angular/core';
 import { IonicPageModule } from 'ionic-angular';
 import { InicioPage } from './inicio';
-import { PesquisarModalPage } from '../pesquisar-modal/pesquisar-modal';
-import { CabecalhoComponent } from '../../components/cabecalho/cabecalho';
+
+import { ComponentsModule } from '../../components/component.module';
 
 @NgModule({
   declarations: [
-    InicioPage, // 1KC
-    PesquisarModalPage,
-    
+    InicioPage,
   ],
   imports: [
-    IonicPageModule.forChild([InicioPage, PesquisarModalPage]),
-    
+    IonicPageModule.forChild(InicioPage),
+    ComponentsModule
   ],
 
 })
-export class InicioPageModule {}
+export class InicioPageModule { }
