@@ -6,6 +6,7 @@ import { InicioPageModule } from '../inicio/inicio.module';
 import { PedidosPageModule } from '../pedidos/pedidos.module';
 import { ComponentsModule } from '../../components/component.module';
 import { FavoritosPageModule } from '../favoritos/favoritos.module';
+import { MinhaContaPageModule } from '../minha-conta/minha-conta.module';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { FavoritosPageModule } from '../favoritos/favoritos.module';
     IonicPageModule.forChild([AbasPage,CabecalhoComponent]),
     InicioPageModule,
     FavoritosPageModule,
-    PedidosPageModule
+    PedidosPageModule,
+    MinhaContaPageModule
   ],
 
 })

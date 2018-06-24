@@ -15,7 +15,9 @@ import { CabecalhoComponent } from '../components/cabecalho/cabecalho';
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp),
+    IonicModule.forRoot(MyApp,{
+      tabsHideOnSubPages:true
+    }),
     AbasPageModule,
   ],
   bootstrap: [IonicApp],

@@ -1,6 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { PesquisarModalPage } from '../../pages/pesquisar-modal/pesquisar-modal';
-import {  NavController, ModalController } from 'ionic-angular';
+import {  NavController } from 'ionic-angular';
+import { CarrinhoPage } from '../../pages/carrinho/carrinho';
 
 /**
  * Generated class for the CabecalhoComponent component.
@@ -16,7 +17,7 @@ export class CabecalhoComponent  {
 
   @Input() texto:string;
 
-  constructor(public modalCtrl:ModalController) {
+  constructor(public navCtrl:NavController) {
 
   }
 
@@ -28,10 +29,13 @@ export class CabecalhoComponent  {
 
 
   pesquisar(){
-    let modal = this.modalCtrl.create(PesquisarModalPage);
-    modal.present();
+    this.navCtrl.push(PesquisarModalPage);
+
   }
  
+  abrirCarrinho(){
+    this.navCtrl.push(CarrinhoPage);
+  }
 
 
 }

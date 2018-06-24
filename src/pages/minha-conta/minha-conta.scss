@@ -1,3 +1,12 @@
 page-minha-conta {
-
+  .usuarioLista {
+    background-color: rgba(66, 66, 66, 0.12) !important;
+    color: map-get($colors, dark);
+    .avatar {
+      font-size: 4em;
+    }
+    .nome {
+      font-size: 1.3em;
+    }
+  }
 }
