@@ -3,11 +3,15 @@ import { IonicPageModule } from 'ionic-angular';
 import { MinhaContaPage } from './minha-conta';
 import { ComponentsModule } from '../../components/component.module';
 import { InfoContaPage } from './info-conta/info-conta';
+import { EditarContaPage } from './editar-conta/editar-conta';
+import { EnderecosPage } from './enderecos/enderecos';
 
 @NgModule({
   declarations: [
     MinhaContaPage,
-    InfoContaPage
+    InfoContaPage,
+    EditarContaPage,
+    EnderecosPage
     
   ],
   imports: [
@@ -15,7 +19,10 @@ import { InfoContaPage } from './info-conta/info-conta';
     ComponentsModule
   ],
   entryComponents:[
-    InfoContaPage
+    InfoContaPage,
+    EditarContaPage,
+    EnderecosPage
+
   ]
 })
 export class MinhaContaPageModule {}

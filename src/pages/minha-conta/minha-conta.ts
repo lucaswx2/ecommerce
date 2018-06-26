@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { InfoContaPage } from './info-conta/info-conta';
+import { EnderecosPage } from './enderecos/enderecos';
 
 /**
  * Generated class for the MinhaContaPage page.
@@ -24,7 +25,11 @@ export class MinhaContaPage {
   }
 
   abrirInfoConta(){
-    this.navCtrl.push(InfoContaPage)
+    this.navCtrl.push(InfoContaPage);
+  }
+
+  abrirEnderecos(){
+    this.navCtrl.push(EnderecosPage);
   }
 
 }

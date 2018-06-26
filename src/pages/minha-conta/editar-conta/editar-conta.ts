@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { EditarContaPage } from '../editar-conta/editar-conta';
+import { NavController, NavParams } from 'ionic-angular';
 
 /**
  * Generated class for the MinhaContaPage page.
@@ -10,16 +9,16 @@ import { EditarContaPage } from '../editar-conta/editar-conta';
  */
 
 @Component({
-  selector: 'info-conta',
-  templateUrl: 'info-conta.html',
+  selector: 'editar-conta',
+  templateUrl: 'editar-conta.html',
 })
-export class InfoContaPage {
+export class EditarContaPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
-  editarConta(){
-    this.navCtrl.push(EditarContaPage);
+  ionViewDidLoad() {
+    console.log('ionViewDidLoad MinhaContaPage');
   }
 
 }
