@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { InfoContaPage } from './info-conta/info-conta';
 import { EnderecosPage } from './enderecos/enderecos';
+import { SugestoesPage } from './sugestoes/sugestoes';
 
 /**
  * Generated class for the MinhaContaPage page.
@@ -32,4 +33,7 @@ export class MinhaContaPage {
     this.navCtrl.push(EnderecosPage);
   }
 
+  irParaSugestoes(){
+    this.navCtrl.push(SugestoesPage)
+  }
 }

@@ -7,6 +7,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { AbasPageModule } from '../pages/abas/abas.module';
 import { Keyboard } from '@ionic-native/keyboard';
+import { ProdutosPageModule } from '../pages/produtos/produtos.module';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { Keyboard } from '@ionic-native/keyboard';
       tabsHideOnSubPages:true
     }),
     AbasPageModule,
+    ProdutosPageModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [

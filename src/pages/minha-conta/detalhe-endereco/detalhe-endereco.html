@@ -1,0 +1,55 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Editar Endereço
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <form>
+    <ion-item>
+      <ion-label floating>Nome do destinatário</ion-label>
+      <ion-input type="text" value="Lucas Medeiros de Freitas"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label floating>Nome do endereço</ion-label>
+      <ion-input type="text" value="Endereço"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label floating>722255-512</ion-label>
+      <ion-input type="tel" value="72255-512"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label floating>Endereço</ion-label>
+      <ion-input type="text" value="EQNO 11/13 BLOCO B" disabled></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label floating>Número</ion-label>
+      <ion-input type="tel" value="3"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label floating>Complemento(opcional)</ion-label>
+      <ion-input type="text" value="apt 201"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label floating>Cidade</ion-label>
+      <ion-input type="text" value="Ceilandia" disabled></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-select disabled>
+        <ion-option value="DF" selected>DF</ion-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-label floating>Ponto de referência(opcional)</ion-label>
+      <ion-input type="text" value="Ced 14 de ceilandia"></ion-input>
+    </ion-item>
+
+  </form>
+  <button class="botao-editar" ion-button color="primary" type="submit" full>SALVAR ALTERAÇÕES</button>
+
+  <button class="botao-editar" ion-button clear color="secondary" block>EXCLUIR ESTE ENDEREÇO</button>
+
+</ion-content>

@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Sugestões
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content>
+  <form>
+    <ion-item>
+      <ion-label stacked>Nos conte o que você pensa:</ion-label>
+      <ion-select>
+        <ion-option value="falha" selected>Reportar uma Falha</ion-option>
+        <ion-option value="recurso">Solicitar Recurso</ion-option>
+        <ion-option value="contato">Entrar em contato com o atendimento</ion-option>
+        <ion-option value="problema">Reportar um problema</ion-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-textarea placeholder="Sua sugestão"></ion-textarea>
+      <ion-label stacked>Levamos a sério todas as mensagens recebidas.</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label floating>E-mail</ion-label>
+      <ion-input type="text" value="freitasmlucas@hotmail.com"></ion-input>
+    </ion-item>
+    <button class="botao-editar" ion-button color="danger" type="submit" block>ENVIAR</button>
+  </form>
+
+</ion-content>

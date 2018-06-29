@@ -1,0 +1,30 @@
+page-produtos {
+  .grid {
+    padding: 0px !important;
+  }
+  .produto {
+    border-color: map-get($colors, grey);
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    .imagem-produto{
+        background-color: map-get($colors,grey );
+        width:100%;
+        height:169px;
+    }
+    .nome-produto {
+      font-size: 0.8em;
+      font-weight: 500;
+    }
+    .label-promocional {
+      font-size: 0.7em;
+      font-weight: bolder;
+      color: map-get($colors, grey);
+    }
+    .preco-produto {
+      font-size: 1em;
+      font-weight: 700;
+    }
+  }
+}

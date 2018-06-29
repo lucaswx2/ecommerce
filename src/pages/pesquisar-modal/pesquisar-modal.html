@@ -5,16 +5,47 @@
   Ionic pages and navigation.
 -->
 <ion-header>
-
   <ion-navbar>
-
-
-      <ion-searchbar #searchbar class="searchbar-modal"  placeholder="O que você procura?"> </ion-searchbar>
+    <ion-searchbar #searchbar class="searchbar-modal" placeholder="O que você procura?"> </ion-searchbar>
   </ion-navbar>
-
 </ion-header>
 
 
-<ion-content padding>
+<ion-content >
+  <ion-list>
+    <ion-item (click)="pesquisaProduto()">
+      <button clear ion-button icon-only color="grey" item-start>
+        <ion-icon name="ios-refresh-circle-outline"></ion-icon>
+      </button>
+      <ion-label>Game of thrones</ion-label>
+      <button clear ion-button icon-only color="grey" item-end>
+        <ion-icon name="ios-trash"></ion-icon>
+      </button>
+    </ion-item>
+    <ion-item>
+      <button clear ion-button icon-only color="grey" item-start>
+        <ion-icon name="ios-refresh-circle-outline"></ion-icon>
+      </button>
+      <ion-label>Arca de noé</ion-label>
+      <button clear ion-button icon-only color="grey" item-end>
+        <ion-icon name="ios-trash"></ion-icon>
+      </button>
+    </ion-item>
+    <ion-item>
+      <button clear ion-button icon-only color="grey" item-start>
+        <ion-icon name="ios-refresh-circle-outline"></ion-icon>
+      </button>
+      <ion-label>Casa da Barbie</ion-label>
+      <button clear ion-button icon-only color="grey" item-end>
+        <ion-icon name="ios-trash"></ion-icon>
+      </button>
+    </ion-item>
+    <ion-item text-right>
+        <button ion-button clear small color="primary">
+            LIMPAR HISTÓRICO
+          </button>
+    </ion-item>
+  </ion-list>
 
+ 
 </ion-content>

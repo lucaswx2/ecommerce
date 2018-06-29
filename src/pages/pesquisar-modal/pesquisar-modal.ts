@@ -18,7 +18,9 @@ export class PesquisarModalPage {
   }
 
 
-
+  pesquisaProduto(){
+    this.navCtrl.push('ProdutosPage');
+  }
   ionViewDidEnter() {
     setTimeout(()=>{
       this.searchBar.setFocus();

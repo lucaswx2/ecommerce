@@ -5,13 +5,17 @@ import { ComponentsModule } from '../../components/component.module';
 import { InfoContaPage } from './info-conta/info-conta';
 import { EditarContaPage } from './editar-conta/editar-conta';
 import { EnderecosPage } from './enderecos/enderecos';
+import { DetalheEnderecoPage } from './detalhe-endereco/detalhe-endereco';
+import { SugestoesPage } from './sugestoes/sugestoes';
 
 @NgModule({
   declarations: [
     MinhaContaPage,
     InfoContaPage,
     EditarContaPage,
-    EnderecosPage
+    EnderecosPage,
+    DetalheEnderecoPage,
+    SugestoesPage
     
   ],
   imports: [
@@ -21,7 +25,9 @@ import { EnderecosPage } from './enderecos/enderecos';
   entryComponents:[
     InfoContaPage,
     EditarContaPage,
-    EnderecosPage
+    EnderecosPage,
+    DetalheEnderecoPage,
+    SugestoesPage
 
   ]
 })

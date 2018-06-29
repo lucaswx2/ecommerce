@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import {  NavController, NavParams } from 'ionic-angular';
-import { DetalheEnderecoPage } from '../detalhe-endereco/detalhe-endereco';
 
 
 /**
@@ -11,16 +10,14 @@ import { DetalheEnderecoPage } from '../detalhe-endereco/detalhe-endereco';
  */
 
 @Component({
-  selector: 'enderecos',
-  templateUrl: 'enderecos.html',
+  selector: 'sugestoes',
+  templateUrl: 'sugestoes.html',
 })
-export class EnderecosPage {
+export class SugestoesPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
 
-  irParaEndereco(){
-    this.navCtrl.push(DetalheEnderecoPage);
-  }
+
 }
