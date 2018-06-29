@@ -3,11 +3,11 @@ page-produtos {
     padding: 0px !important;
   }
   .produto {
-    border-color: map-get($colors, grey);
-    border-right-style: solid;
-    border-right-width: 1px;
-    border-bottom-style: solid;
-    border-bottom-width: 1px;
+    border-color: lightgrey;
+    border-right-style: inset;
+    border-right-width: 4px;
+    border-bottom-style: inset;
+    border-bottom-width: 4px;
     .imagem-produto{
         background-color: map-get($colors,grey );
         width:100%;
