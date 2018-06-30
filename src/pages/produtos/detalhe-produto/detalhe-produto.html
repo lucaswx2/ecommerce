@@ -1,0 +1,133 @@
+<ion-header no-border [scrollHide]="headerScrollConfig" [scrollContent]="pageContent">
+
+  <ion-navbar transparent>
+    <ion-buttons end>
+      <button ion-button icon-only color="secondary">
+        <ion-icon name="md-share"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content #pageContent fullscreen>
+  <ion-grid>
+    <ion-row>
+      <ion-slides #slider pager>
+        <ion-slide>
+          <img class="imagem-produto" src="https://images-submarino.b2w.io/produtos/01/00/item/124149/5/124149501SZ.jpg">
+        </ion-slide>
+
+        <ion-slide>
+          <img class="imagem-produto" src="https://images-submarino.b2w.io/produtos/01/00/item/124149/5/124149501SZ.jpg">
+        </ion-slide>
+
+        <ion-slide>
+          <img class="imagem-produto" src="https://images-submarino.b2w.io/produtos/01/00/item/124149/5/124149501SZ.jpg">
+        </ion-slide>
+    
+      </ion-slides>
+      <ion-fab middle right edge>
+          <button ion-fab  color="primary">
+            <ion-icon  md="md-heart"></ion-icon>
+          </button>
+        </ion-fab>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <p class="nome-produto" text-wrap>Game of Thrones</p>
+      </ion-col>
+    </ion-row>
+    <ion-row class="Descritivos">
+      <ion-col text-center>
+        <rating [(ngModel)]="rate" readOnly="false">
+        </rating>
+      </ion-col>
+    </ion-row>
+    <ion-row class="Descritivos">
+
+      <ion-col text-left>
+        <p class="qtd-vendidos">142</p>
+        <p class="label-vendidos">Vendidos</p>
+      </ion-col>
+      <ion-col text-right>
+        <p class="qtd-vendidos">482</p>
+        <p class="label-vendidos">Lista de Desejos</p>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <h6>Descrição</h6>
+        <p>
+          é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI,
+          quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos.
+          Lorem Ipsum sobreviveu não só
+          <a href="#">Leia Mais...</a>
+        </p>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <h6>Pode te interessar</h6>
+      <ion-col col-12 class="produto" (click)="verProduto()">
+        <img class="imagem-produto" src="https://images-submarino.b2w.io/produtos/01/00/item/124149/5/124149501SZ.jpg">
+        <p class="nome-produto">Game of Thrones</p>
+
+        <p class="preco-produto">R$ 61,90</p>
+      </ion-col>
+      <ion-col col-12 class="produto">
+        <img class="imagem-produto" src="https://img.olx.com.br/images/88/888806012190447.jpg">
+        <p class="nome-produto">Game of Thrones</p>
+
+        <p class="preco-produto">R$ 61,90</p>
+      </ion-col>
+      <ion-col col-12 class="produto">
+        <img class="imagem-produto" src="https://images-submarino.b2w.io/produtos/01/00/item/112471/3/112471392SZ.jpg">
+        <p class="nome-produto">Game of Thrones</p>
+
+        <p class="preco-produto">R$ 61,90</p>
+      </ion-col>
+      <ion-col col-12 class="produto">
+        <img class="imagem-produto" src="https://images-na.ssl-images-amazon.com/images/I/91PaGr0OTPL._SL1500_.jpg">
+        <p class="nome-produto">Game of Thrones</p>
+
+        <p class="preco-produto">R$ 61,90</p>
+      </ion-col>
+      <ion-col col-12 class="produto">
+        <img class="imagem-produto" src="https://images-eu.ssl-images-amazon.com/images/I/51j0ZAOmi4L._SL500_AC_SS350_.jpg">
+        <p class="nome-produto">Game of Thrones</p>
+
+        <p class="preco-produto">R$ 61,90</p>
+      </ion-col>
+      <ion-col col-12 class="produto">
+        <img class="imagem-produto" src="https://http2.mlstatic.com/game-of-thrones-1-a-7-temporada-em-dvd-D_NQ_NP_705213-MLB26452219761_112017-F.jpg">
+        <p class="nome-produto">Game of Thrones</p>
+
+        <p class="preco-produto">R$ 61,90</p>
+      </ion-col>
+      <ion-col col-12 class="produto">
+        <img class="imagem-produto" src="https://i.ytimg.com/vi/I7xfqdN4nnQ/maxresdefault.jpg">
+        <p class="nome-produto">Game of Thrones</p>
+
+        <p class="preco-produto">R$ 61,90</p>
+      </ion-col>
+
+    </ion-row>
+  </ion-grid>
+
+</ion-content>
+<ion-footer>
+  <ion-toolbar>
+    <ion-row>
+      <ion-col>
+        <h1 class="preco-produto" text-wrap>R$ 61,00</h1>
+        <h3 class="label-promocional">2x de R$ 30,95</h3>
+      </ion-col>
+      <ion-col text-right>
+        <br>
+        <button ion-button color="primary" block>COMPRAR</button>
+      </ion-col>
+    </ion-row>
+  </ion-toolbar>
+</ion-footer>

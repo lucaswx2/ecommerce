@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { ScrollHideConfig } from '../../directives/scroll-hide/scroll-hide';
+import { DetalheProdutoPage } from './detalhe-produto/detalhe-produto';
 
 /**
  * Generated class for the ProdutosPage page.
@@ -24,4 +25,7 @@ export class ProdutosPage {
     console.log('ionViewDidLoad ProdutosPage');
   }
 
+  verProduto(){
+    this.navCtrl.push(DetalheProdutoPage);
+  }
 }

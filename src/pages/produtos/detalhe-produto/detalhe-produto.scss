@@ -1,0 +1,73 @@
+detalhe-produto {
+  ion-fab{
+    top:60% !important;
+  }
+    a{
+        text-decoration: none;
+    }
+  .bar-button-default-md {
+    color: map-get($colors, secondary);
+  }
+  .imagem-produto {
+    max-height: 338px;
+    min-height: 338px;
+    width: 100%;
+  }
+  .nome-produto {
+    font-size: 1.8em;
+    font-weight: bolder;
+  }
+  ion-toolbar {
+    .toolbar-background-md{
+        background-color: map-get($colors, light) !important;
+
+    }
+        box-shadow: 0px 7px 14px 3px !important;
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      line-height: 0.8;
+    }
+    border-color: map-get($colors, grey );
+    border-top-width: 2px;
+    .label-promocional {
+      font-size: 1.2em;
+      font-weight: bolder;
+      margin-left: 2%;
+      color: map-get($colors, grey);
+    }
+    .preco-produto {
+      margin-left: 2%;
+      font-size: 1.5em;
+      font-weight: 700;
+    }
+  }
+    .produto {
+        border-color: lightgrey;
+        border-right-style: inset;
+        border-right-width: 4px;
+        border-bottom-style: inset;
+        border-bottom-width: 4px;
+        .imagem-produto{
+            background-color: map-get($colors,grey );
+            width:100%;
+            height:169px;
+        }
+        .nome-produto {
+          font-size: 0.8em;
+          font-weight: 500;
+        }
+        .label-promocional {
+          font-size: 0.7em;
+          font-weight: bolder;
+          color: map-get($colors, grey);
+        }
+        .preco-produto {
+          font-size: 1em;
+          font-weight: 700;
+        }
+      }
+}

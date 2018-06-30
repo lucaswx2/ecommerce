@@ -19,7 +19,7 @@ import { ProdutosPageModule } from '../pages/produtos/produtos.module';
       tabsHideOnSubPages:true
     }),
     AbasPageModule,
-    ProdutosPageModule
+    ProdutosPageModule,
   ],
   bootstrap: [IonicApp],
   entryComponents: [
