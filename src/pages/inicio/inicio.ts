@@ -30,4 +30,7 @@ export class InicioPage {
     modal.present();
   }
 
+  pesquisaProduto(){
+    this.navCtrl.push('ProdutosPage');
+  }
 }
