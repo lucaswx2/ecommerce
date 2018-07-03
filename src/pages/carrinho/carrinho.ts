@@ -14,6 +14,8 @@ import { NavController, NavParams } from 'ionic-angular';
 })
 export class CarrinhoPage {
 
+  itensCarrinho: Array<any> = [{ imagem: 'https://images-soubarato.b2w.io/produtos/01/00/item/124149/5/124149501SZ.jpg', nome: 'Livros Game of Thrones box 5', qtd: 5, preco: 149.90 },
+                               { imagem: 'https://images-na.ssl-images-amazon.com/images/I/91PaGr0OTPL._SL1500_.jpg', nome: 'The Hound Action Figure', qtd: 5, preco: 149.90 }];
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 

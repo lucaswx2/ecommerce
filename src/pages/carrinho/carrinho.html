@@ -12,10 +12,83 @@
 
 
 <ion-content>
-  <div class="semPedidos" text-center>
+  <div class="semPedidos" *ngIf="!itensCarrinho.length" text-center>
     <ion-icon name="md-cart"></ion-icon>
     <p>Não há itens em seu carrinho de compras.</p>
   </div>
 
+  <ion-list>
+    <ion-item class="item-carrinho" *ngFor="let item of itensCarrinho">
+      <!-- item -->
+      <ion-row>
+        <!-- col-cancel  button -->
+        <ion-col col-2>
+          <!-- col-cancel  button -->
+          <ion-icon class="fechar-btn" ion-button icon only clear ios="ios-close-circle" md="md-close-circle">
+          </ion-icon>
+        </ion-col>
+        <ion-col col-10>
+          <!-- col-for item-image and details -->
+          <ion-row>
+            <h4>
+              <strong text-wrap>{{item.nome}}</strong>
+            </h4>
+          </ion-row>
+          <ion-row>
+            <ion-col col-6>
+              <!-- item-image -->
+              <img src='{{item.imagem}}' alt="">
+            </ion-col>
+            <ion-col col-6>
+
+              <p class="detalhe-item" text-wrap>Quantidade: {{item.qtd}}</p>
+              <p class="preco-item">
+                Price: {{item.preco | currency:'BRL':'symbol'}}
+              </p>
+              <ion-row>
+                <!-- row-for count item -->
+                <div class="contador">
+                  <span class="item-contador">
+                    -
+                  </span>
+                  <span class="item-contador mostrar-contador">
+                    {{item.qtd}}
+                  </span>
+                  <span class="item-contador">
+                    +
+                  </span>
+                </div>
+              </ion-row>
+            </ion-col>
+          </ion-row>
+        </ion-col>
+      </ion-row>
+
+    </ion-item>
+
+  </ion-list>
+
 
 </ion-content>
+<ion-footer>
+  <ion-toolbar>
+    <ion-row>
+      <ion-col text-left>
+        <h5 class="subtotal" text-wrap>Subtotal (2 itens)</h5>
+        <h5 class="parcelas">Parcelas</h5>
+        <h3 class="total">Total</h3>
+      </ion-col>
+      <ion-col text-right>
+        <h5 class="subtotal" text-wrap>R$ 61,00</h5>
+        <h5 class="parcelas">2x de R$ 30,95</h5>
+        <h3 class="total">R$ 459,00</h3>
+      </ion-col>
+    </ion-row>
+    <ion-row class="btn-comprar">
+      <ion-col offset-6>
+        <br>
+        <button ion-button color="primary" full>COMPRAR</button>
+      </ion-col>
+    </ion-row>
+  </ion-toolbar>
+</ion-footer>

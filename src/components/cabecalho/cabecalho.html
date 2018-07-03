@@ -12,7 +12,8 @@
     <button ion-button icon-only (click)="pesquisar()">
       <ion-icon name="md-search"></ion-icon>
     </button>
-    <button ion-button icon-only (click)="abrirCarrinho()">
+    <button ion-button icon-only class="carrinho" (click)="abrirCarrinho()">
       <ion-icon name="md-cart"></ion-icon>
+      <ion-badge class="carrinho-badge" color="danger">2</ion-badge>
     </button>
   </ion-buttons>

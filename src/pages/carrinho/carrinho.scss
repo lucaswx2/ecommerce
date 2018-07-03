@@ -1,3 +1,78 @@
 page-carrinho {
+  .item-carrinho {
+    .contador {
+      padding: 15px 0px 25px 0px;
+      .item-contador {
+        padding: 1.5px 9px;
+        font-size: 18px;
+        font-weight: 700;
+        color: map-get($colors, secondary );
+        border-radius: 100%;
 
+      }
+      .mostrar-contador {
+        color: map-get($colors, primary );
+        background-color: map-get($colors, light );
+
+      }
+    }
+    .fechar-btn {
+      font-size: 1.5em;
+      top: 0%;
+      left: -32%;
+      color: map-get($colors, grey);
+    }
+    img {
+      height: 100px;
+      width: 100%;
+    }
+    .nome-item {
+      font-weight: 700;
+      font-size: 17px;
+    }
+    .detalhe-item {
+      font-size: 13px;
+      line-height: 1.3em;
+      white-space: initial !important;
+    }
+    .preco-item {
+      font-weight: 700;
+      color: map-get($colors, primary);
+    }
+  }
+  ion-toolbar {
+    .toolbar-background-md{
+        background-color: map-get($colors, light) !important;
+
+    }
+        box-shadow: 0px 7px 14px 3px !important;
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      line-height: 0.8;
+    }
+    border-color: map-get($colors, grey );
+    border-top-width: 2px;
+    .subtotal {
+      font-size: 0.8em;
+      margin-left: 2%;
+      color: map-get($colors, dark);
+    }
+    .parcelas {
+      margin-left: 2%;
+      font-size: 0.8em;
+    }
+    .total {
+      margin-left: 2%;
+      font-size: 1.1em;
+    }
+  }
+
+  .btn-comprar{
+      margin-top:-8%;
+  }
+   
 }
